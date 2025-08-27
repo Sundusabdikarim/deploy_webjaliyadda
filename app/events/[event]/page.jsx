@@ -1,5 +1,6 @@
 import { fetchEventsPage ,fetchDataFromStarpi } from "@/utilis/starpi.utlis";
-import Hightlight from "@/app/_components/Events/HiglightEvents";
+import HighlightEvents from "@/app/_components/Events/HighlightEvents";
+
 import EventComponent from "@/app/_components/Events/EventComponents";
 
 
@@ -8,13 +9,13 @@ export default async function Page ({ params }) {
     const {event: slug} = params;
 
     const events = await fetchEventsPage();
-    
+
     const event = events.find((event) => event.slug === slug);
 
   return (
 
     <main className="">
-      <Hightlight event={event}/>
+      <HighlightEvents event={event}/>
       <div className="imagestext">
       {event.events_content.map ((component) => (
         <EventComponent key ={component.id} component={ component }/>
