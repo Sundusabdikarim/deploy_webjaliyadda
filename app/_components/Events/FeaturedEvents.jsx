@@ -4,7 +4,7 @@ const FeaturedArticle = ({event}) =>{
     return (
       <Link href={`/events/${event.slug}`} className="featuredItemsEvents__article">
     <div className="featuredItemsEvents__image">
-    <img src={event.featuredImage}
+    <Image src={event.featuredImage}
      alt=""/>
     </div>  
     <div className="featuredItemsEvents__Text">

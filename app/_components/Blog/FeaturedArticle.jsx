@@ -5,7 +5,7 @@ const FeaturedArticle = ({article}) =>{
       <Link href={`/blog/${article.slug}`} className="featuredItems__article">
     
       <div className="featuredItems__image">
-    <img src={article.featuredImage}
+    <Image src={article.featuredImage}
      alt={article.headline}/>
     </div>  
     <div className="featuredItems__Text">

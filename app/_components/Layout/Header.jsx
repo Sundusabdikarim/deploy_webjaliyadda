@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className={`header ${path === "/about" ? "header--light" : ""}`}>
       {/* Logo */}
-      <img
+      <Image
         className="header_logo"
         src="/assets/WhatsApp_Image_2024-12-30_at_06.02.59_bd23cc54-removebg-preview.png"
         alt="Logo"

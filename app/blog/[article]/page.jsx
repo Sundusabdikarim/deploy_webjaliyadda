@@ -10,7 +10,7 @@ export default async function Page ({ params }) {
     <main className="SlugArticle">
       <h5>{article.headline}</h5>
       <p>{article.pragraph}</p>
-      <img src={article.featuredImage} className="SlugArticle__image"/>
+      <Image src={article.featuredImage} className="SlugArticle__image"/>
 
     </main>
   );

@@ -20,7 +20,7 @@ const AboutUs = ( {data}) => {
           <button className="btn">Let's talk →</button>
         </div>
         <div className="about__hero-image">
-          <img src={featuredImage} alt="Team" />
+          <Image src={featuredImage} alt="Team" />
         </div>
       </section>
 

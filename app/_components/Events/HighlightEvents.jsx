@@ -12,8 +12,7 @@ const Hightlight = ({ event }) => {
                 </div>
               
             ))}
-         {/* <h5>{headlines[0].headline}</h5>
-         <p>{headlines[0].subtitile}</p> */}
+         
     </div>
     <div>
     </div>
