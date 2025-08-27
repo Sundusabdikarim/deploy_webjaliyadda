@@ -36,8 +36,8 @@ const Header = () => {
       {/* Logo */}
       <Image
         className="header_logo"
-        src="/assets/WhatsApp_Image_2024-12-30_at_06.02.59_bd23cc54-removebg-preview.png"
-        alt="Logo"
+        src="/assets/logo.png"
+        alt="Logo" width={500} height={500} 
       />
 
       {/* Hamburger Button */}

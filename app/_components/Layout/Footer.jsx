@@ -40,7 +40,7 @@ const Footer = () => {
     return (
  <footer className="footer">
 <nav className="footer__nav">
-    <Image className="footer__logo" src="\assets\WhatsApp_Image_2024-12-30_at_06.02.59_bd23cc54-removebg-preview.png"/>
+    <Image className="footer__logo" src="/assets/logo.png"  width={500} height={500} /> 
      <ul className="footer__links">
         {navItem.map((item) => (
             <li key={item.slug}>

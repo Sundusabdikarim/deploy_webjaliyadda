@@ -6,7 +6,6 @@ import { fetchEventsPage } from "@/utilis/starpi.utlis";
 
 import { fetchDataFromStarpi, fetchHomepage } from "@/utilis/starpi.utlis";
 import FeaturedItem from "../Events/FeaturedItems";
-import Page from "@/app/events/page";
 export default async function HomePage  () {
 const data = await fetchHomepage();
 

@@ -21,7 +21,7 @@ const ThirdSection = ( {headline, items =[ {title},{date}, {featuredImage}, {loc
         <div className="ThirdSec__container">
             {items.slice(0,itemNumber).map((item,index) => (
                 <div key = {index} className="ThirdSec__Card"> 
-                <Image src ={item.featuredImage} className="ThirdSec__imageTh" width={500}/>
+                <Image src ={item.featuredImage} className="ThirdSec__imageTh"width={500} height={500} />
                 <div className="ThirdSec__hedalo">
                 <h5>{item.title}</h5>
                 <p>{item.date}</p>

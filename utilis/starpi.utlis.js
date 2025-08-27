@@ -17,7 +17,8 @@ export async function fetchDataFromStarpi (route){
 }
 
 export async function fetchHomepage(){
-    const homeData = await fetchDataFromStarpi("homepages?populate=featuredImage");
+    const homeData = await fetchDataFromStarpi("homepages?populate=*")
+       
     const processedHomePage = homeData.map(ProcessHomePage);
 
    return processedHomePage;
@@ -33,7 +34,7 @@ function ProcessHomePage(home){
 }
 
 export async function fetchAboutPage (){
-const aboutData = await fetchDataFromStarpi("about-uses?populate=featuredImage");
+const aboutData = await fetchDataFromStarpi("about-uses?populate=*");
 const processedAboutPage = aboutData.map(ProcessAboutUsPage);
 
 return processedAboutPage
@@ -47,7 +48,7 @@ function ProcessAboutUsPage(about){
     }
 }
 export async function fetchBlogArticle(){
-    const blogData = await fetchDataFromStarpi("blogpages?populate=featuredImage");
+    const blogData = await fetchDataFromStarpi("blogpages?populate=*");
     const ProcessedBlogArticle =blogData.map(processBlogArticle);
 
      ProcessedBlogArticle.sort(

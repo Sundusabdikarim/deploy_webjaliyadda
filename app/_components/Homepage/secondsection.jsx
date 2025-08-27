@@ -6,7 +6,7 @@ const SecondSection = ( { data } ) => {
 
   return (
     <div className="SeconSec">
-        <Image src="/pexels-davidpeterson-344738.jpg" className="SeconSec__image" />
+        <Image src="/pexels-davidpeterson-344738.jpg" className="SeconSec__image" width={500} height={500} />
        <div className="SeconSec__content" >
         <div className="SeconSec__all">
             <div className="SeconSec__headlineText">

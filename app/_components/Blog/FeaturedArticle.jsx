@@ -8,7 +8,7 @@ const FeaturedArticle = ({article}) =>{
     
       <div className="featuredItems__image">
     <Image src={article.featuredImage}
-     alt={article.headline}/>
+     alt={article.headline} width={300} height={300}/>
     </div>  
     <div className="featuredItems__Text">
       <h5>{article.headline}</h5>
