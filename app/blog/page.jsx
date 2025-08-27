@@ -1,6 +1,5 @@
-import Blog from "@/app/_components/Blog/blog";
-import FeaturedItems from "../_components/Blog/featuredItems";
-import FeaturedArticle from "../_components/Blog/FeaturedArticle";
+import Blog from "@/app/_components/Blog/Blog";
+import FeaturedItems from "../_components/Blog/FeaturedItems";
 import { fetchBlogArticle } from "@/utilis/starpi.utlis";
 
 export default async function Page() {
