@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
     const navItem = [
@@ -39,7 +40,7 @@ const Footer = () => {
     return (
  <footer className="footer">
 <nav className="footer__nav">
-    <img className="footer__logo" src="\assets\WhatsApp_Image_2024-12-30_at_06.02.59_bd23cc54-removebg-preview.png"/>
+    <Image className="footer__logo" src="\assets\WhatsApp_Image_2024-12-30_at_06.02.59_bd23cc54-removebg-preview.png"/>
      <ul className="footer__links">
         {navItem.map((item) => (
             <li key={item.slug}>

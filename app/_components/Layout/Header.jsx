@@ -4,6 +4,8 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaPhone } from "react-icons/fa";
+import Image from "next/image";
+
 
 const Header = () => {
   const path = usePathname();
