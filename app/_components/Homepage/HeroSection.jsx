@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image";
+
 
 const HerSection =( { data } ) => {
     const {headline ,text ,featuredImage } = data;

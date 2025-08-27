@@ -1,5 +1,7 @@
 import Link from "next/link";
 import {formatDate} from  "@/utilis/starpi.utlis"
+import Image from "next/image";
+
 const FeaturedArticle = ({article}) =>{
     return (
       <Link href={`/blog/${article.slug}`} className="featuredItems__article">

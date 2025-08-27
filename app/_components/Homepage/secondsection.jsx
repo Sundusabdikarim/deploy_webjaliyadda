@@ -1,3 +1,6 @@
+
+import Image from "next/image";
+
 const SecondSection = ( { data } ) => {
   const {  headline, text,  Ourmission,ourmissionpragraph, ourvission,  Ourvissionpragraph  } = data;
 

@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+
 const Events = ({items}) => {
 return (
     <section className="Events">

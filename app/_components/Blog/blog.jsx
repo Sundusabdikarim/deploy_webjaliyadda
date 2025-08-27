@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+
 const Blog = ({blog}) => {
     const { headline,featuredImage,pragraph}=blog;
     return (

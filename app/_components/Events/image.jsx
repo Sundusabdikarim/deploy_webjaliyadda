@@ -1,4 +1,6 @@
 import {extractImageUrl} from "@/utilis/starpi.utlis"
+import Image from "next/image";
+
 const Images = ({component}) => {
   
     return (

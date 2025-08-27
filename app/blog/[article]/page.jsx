@@ -1,4 +1,5 @@
 import { fetchBlogArticle } from "@/utilis/starpi.utlis";
+import Image from "next/image";
 
 export default async function Page ({ params }) {
 

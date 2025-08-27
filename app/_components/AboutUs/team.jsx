@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Team = ({headline ,teams,}) => {
     return (
         <section className="Teams">

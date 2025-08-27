@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import FeaturedArticle from "./FeaturedEvents";
+import Image from "next/image";
+
 
 const FeaturedItem = ({ items }) => {
   const [itemNumber, setItemNumber] = useState(3);

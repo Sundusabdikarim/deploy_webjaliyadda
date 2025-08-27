@@ -1,10 +1,18 @@
 "use client";
+
+import Image from "next/image";
+
 const MissionVision = ({ data }) => {
   return (
     <section className="misvis">
       {data.map((item, index) => (
         <div key={index} className={`row ${index % 2 === 1 ? "reverse" : ""}`}>
-          <Image src={item.featuredImage} alt={item.headline} width={500} height={500}  />
+          <Image
+            src={item.featuredImage}
+            alt={item.headline}
+            width={500}
+            height={500}
+          />
           <div className="text">
             <h5>{item.headline}</h5>
             <p className="pragraph">{item.text}</p>
