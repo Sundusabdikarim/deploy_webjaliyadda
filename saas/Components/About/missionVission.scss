@@ -1,0 +1,58 @@
+.misvis {
+padding-top: 3rem;
+
+}
+.row {
+  display: flex;
+  flex-direction: row;
+ padding: 3rem 0 3rem 2rem;
+  background-color: aliceblue;
+    min-height: 10vh;
+
+
+  img {
+  //  padding: 0 3rem 0 0;
+   width: 30%;
+  //  max-width: 500px;
+    height:10%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .text {
+  
+    h5 {
+
+      font-size: 1.8rem;
+      font-weight: bold;
+    
+      text-align: center;
+      margin: 1rem 0.5rem 0rem 0rem
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      margin-left: 2rem;
+      
+    font-style:oblique;
+ 
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+     padding: 0 4rem;
+
+
+
+
+
+
+
+
+
+
+
+}

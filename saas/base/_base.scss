@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    background-color:#d0eaf9; ;
+    width: 100%;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+        text-decoration: none;
+    }
+}
+html {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land){
+        font-size: 55%;
+    }
+
+    @include respond(phone){
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}

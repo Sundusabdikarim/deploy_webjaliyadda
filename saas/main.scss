@@ -1,0 +1,15 @@
+@import "base/mixins";
+@import "base/base";
+@import "./Components/Layout/header";
+@import "./Components/Hompage/Hero_section";
+@import "./base/typography";
+@import "./Components/Hompage/SecondSec";
+@import "./Components/Hompage/ThirdSec";
+@import "./Components/Hompage/Contact";
+@import "./Components/Layout/Footer";
+@import "./Components/About/about.scss";
+@import "./Components/About/missionVission.scss";
+@import "./Components/About/team.scss";
+@import "./Components/Blog/blog.scss";
+@import "./Components/Blog/articleslug.scss";
+@import "./Events/events.scss"

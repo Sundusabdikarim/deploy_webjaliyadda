@@ -1,0 +1,55 @@
+.SeconSec{
+    display: flex;
+    margin-bottom: 1rem;
+    gap:5rem;
+    
+ 
+    &__coppy{
+        width: 80% ;
+            font-size:1.5rem;
+            font-style:oblique;
+            
+            
+
+    }
+
+    & img {
+        width: 30%;
+        padding-left: 1rem;
+    }
+    &__image{
+        object-fit: cover;
+    }
+    &__missionvission{
+        margin-top: 3rem;
+        display: flex;
+        gap: 8rem;
+    }
+    @media (max-width: 760px) {
+    flex-direction: column; // stack image & content
+    gap: 2rem;
+
+     &__image {
+      display: none; // hide image
+    }
+
+    &__coppy {
+      width: 100%;
+      font-size: 1.3rem;
+    }
+
+    &__missionvission {
+      gap: 2rem;
+      flex-direction: column; // stack mission & vision
+    }
+  }
+
+  /* Mobile breakpoint */
+  @media (max-width: 480px) {
+    &__coppy {
+      font-size: 1.1rem;
+    }
+  }
+
+    
+}

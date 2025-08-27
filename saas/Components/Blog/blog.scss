@@ -1,0 +1,228 @@
+.BlogHero {
+  display: flex;
+  flex-wrap: nowrap; 
+  margin: 8rem 1rem 1rem;
+  background-color: azure;
+
+  img {
+    width: 20%; 
+    height: 29rem;       /* image takes 40% of row */
+    border-radius: 8px;
+  
+}
+
+  &__Text {
+    width: 55%;       /* text takes remaining space */
+    padding: 2rem;
+    text-align: left; /* align text to left for readability */
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  /* Tablet: width <= 760px */
+  @media (max-width: 760px) {
+    padding: 1.5rem;
+
+    img {
+      width: 50%;      /* slightly bigger on smaller screens */
+      margin-right: 1rem;
+    }
+
+    &__Text {
+      width: 50%;      /* adjust text width */
+      padding: 1rem;
+      font-size: 1.2rem;
+
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* Mobile: width <= 480px */
+  @media (max-width: 480px) {
+    padding: 1rem;
+
+    img {
+      width: 50%;      /* smaller screen, image 50% */
+      margin-right: 0.5rem;
+    }
+
+    &__Text {
+      width: 50%;      /* keep side by side */
+      padding: 0.5rem;
+      font-size: 0.9rem;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.featuredItems {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  &__Headline {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.25%;
+    row-gap: 3rem;
+  }
+
+  &__article {
+    width: 32.5%; /* 3 per row on desktop */
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 3.5rem 3.5rem 0 0;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 35.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3.5rem 3.5rem 0 0;
+      object-fit: cover;
+    }
+  }
+
+  &__Text {
+    padding: 1rem;
+    text-align: center;
+
+    h5 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+}
+
+/* Button styles */
+.btnn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  &--small {
+    padding: 0.9rem 4rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    background-color: azure;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e0f0ff;
+    }
+  }
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablet: width <= 1024px */
+@media (max-width: 1024px) {
+  .featuredItems__article {
+    width: 48%; /* 2 per row */
+  }
+
+  .featuredItems__image {
+    height: 30rem;
+  }
+}
+
+/* Mobile: width <= 760px */
+@media (max-width: 760px) {
+  .featuredItems__article {
+    width: 100%; /* 1 per row */
+  }
+
+  .featuredItems__image {
+    height: 25rem;
+  }
+
+  .featuredItems__Text h5 {
+    font-size: 1.3rem;
+  }
+
+  .featuredItems__Text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile: width <= 480px */
+@media (max-width: 480px) {
+  .featuredItems {
+    margin: 1rem;
+  }
+
+  .featuredItems__image {
+    height: 20rem;
+  }
+
+  .featuredItems__Text h5 {
+    font-size: 1.1rem;
+  }
+
+  .featuredItems__Text p {
+    font-size: 2rem;
+  }
+
+  .btnn--small {
+    padding: 0.6rem 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+ .btnn {
+  display: flex;           // ✅ Important
+  justify-content: center; // ✅ Horizontally center the button
+  align-items: center;     // ✅ Vertically center if needed (when height is set)
+  margin-top: 3rem;        // optional spacing
+
+ &--small {
+    padding: 0.9rem 4rem;
+
+    border-radius: 3rem;
+    font-size: 0.875rem;
+    background-color: azure;
+    font-size: large;
+    
+  }
+}

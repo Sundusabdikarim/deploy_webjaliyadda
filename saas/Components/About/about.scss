@@ -1,0 +1,149 @@
+.about {
+  font-family: 'Inter', sans-serif;
+  color: #1d1d1f;
+  width: 100%;
+  
+&__paragraphh {
+  margin-top: 7rem; 
+font-size:1.3rem;
+color:#3e7589 ;
+
+
+}
+                
+   
+
+      
+    // }
+    &__hero-text{
+        margin-top: 7rem;
+        margin-bottom: auto;
+         font-size:2rem;
+            font-style:oblique;
+            
+    }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6f6ff;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 3rem 3rem 3rem;
+
+
+    p {
+        margin-top: 1.9rem;
+      font-size: 1.7rem;
+      color: #333;
+      margin-bottom: 1rem;
+     font-style:oblique;
+
+
+    }
+
+    img {
+      width: 25rem;
+       height: 25.5rem;
+      margin: 2rem auto;
+    }
+
+    .btn {
+      background-color: #00aaff;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #008ecc;
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #3e7589;
+
+    .stat {
+      min-width: 120px;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0a0a23;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      img {
+        max-height: 32px;
+        margin: 0.5rem auto;
+      }
+    }
+  }
+
+  &__values {
+    background: #fff;
+    padding: 3rem 1rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+
+}
+/* Tablet and mobile */
+@media (max-width: 760px) {
+  .about__hero {
+    flex-direction: column; /* stack text above image */
+    padding: 4rem 2rem 2rem 2rem; /* smaller padding */
+    text-align: center;
+  }
+
+  .about__hero-text {
+    margin-top: 2rem; /* smaller margin */
+  }
+
+  .about__hero-image {
+    margin-top: 2rem; /* optional: reduce spacing between text and image */
+  }
+
+  .btn {
+    margin-top: 1.5rem; /* smaller gap above button */
+  }
+}
+
+@media (max-width: 480px) {
+  .about__hero {
+    padding: 3rem 1.5rem 1rem 1.5rem; /* further reduced */
+  }
+
+  .about__hero-text {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .about__hero-image img {
+    height: auto; /* make image fit naturally */
+  }
+}
+
+  
+}
+
