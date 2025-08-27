@@ -77,7 +77,7 @@ export function formatDate(dateString) {
 
 
 export async function fetchEventsPage() {
-    const eventData = await fetchDataFromStarpi("events-pages?populate[featuredImage]=*&populate[events_content][populate][featuredImage]=*")
+    const eventData = await fetchDataFromStarpi("events-pages?populate=*")
         // populate[events_content][populate][featuredImage]=*");
     const ProcessedEvents = eventData.map(processEvents);
       
