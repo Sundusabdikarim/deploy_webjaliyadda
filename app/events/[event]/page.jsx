@@ -8,6 +8,7 @@ export default async function Page ({ params }) {
     const {event: slug} = params;
 
     const events = await fetchEventsPage();
+    
     const event = events.find((event) => event.slug === slug);
 
   return (
