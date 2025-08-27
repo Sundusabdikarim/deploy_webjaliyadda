@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.STARPI_URL || "http://127.0.0.1:1337";
+const BASE_URL = process.env.STARPI_URL;
 
 export async function fetchDataFromStarpi (route){
     const url = `${BASE_URL}/api/${route}`;
