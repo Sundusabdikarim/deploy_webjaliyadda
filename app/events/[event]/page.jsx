@@ -1,5 +1,5 @@
 import { fetchEventsPage ,fetchDataFromStarpi } from "@/utilis/starpi.utlis";
-import Hightlight from "@/app/_components/Events/higlightEvents";
+import Hightlight from "@/app/_components/Events/HiglightEvents";
 import EventComponent from "@/app/_components/Events/EventComponents";
 
 
