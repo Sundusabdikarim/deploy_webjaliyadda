@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.STARPI_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_STARPI_URL;
 
 export async function fetchDataFromStarpi (route){
     const url = `${BASE_URL}/api/${route}`;
