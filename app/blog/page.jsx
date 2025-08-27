@@ -1,4 +1,4 @@
-import Blog from "@/app/_components/Blog/Blog";
+import Blog from "@/app/_components/Blog/blog";
 import FeaturedItems from "../_components/Blog/FeaturedItems";
 import { fetchBlogArticle } from "@/utilis/starpi.utlis";
 

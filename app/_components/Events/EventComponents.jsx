@@ -1,4 +1,3 @@
-import Hightlight from "./HiglightEvents";
 import Images  from "./image"
 
 const  EventComponent = ( { component }  ) => {
