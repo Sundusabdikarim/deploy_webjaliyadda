@@ -3,7 +3,7 @@ const Blog = ({blog}) => {
     return (
         <article className="BlogHero">
          
-          <Image src={featuredImage}   />
+          <Image src={featuredImage} width={500} height={500}   />
         
           <div className="BlogHero__Text">
             <h3>{headline}</h3>

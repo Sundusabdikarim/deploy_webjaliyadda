@@ -3,7 +3,7 @@ const Images = ({component}) => {
   
     return (
         <div className="imageIm">
-<Image src={extractImageUrl(component.featuredImage)} />
+<Image src={extractImageUrl(component.featuredImage)} width={500} height={500}  />
 </div>
     )
 }

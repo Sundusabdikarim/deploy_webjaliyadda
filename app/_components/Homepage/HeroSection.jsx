@@ -5,7 +5,7 @@ const HerSection =( { data } ) => {
     return (
        <section className="hero">
         <div className="hero__background">
-            <Image className ="" src = {featuredImage} />
+            <Image className ="" src = {featuredImage} width={500} height={500}  />
         </div>
         <div className="hero__headline">
             <h5>{headline}</h5>

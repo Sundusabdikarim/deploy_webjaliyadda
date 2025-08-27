@@ -7,7 +7,7 @@ const Team = ({headline ,teams,}) => {
             <div className="Team">
             {teams.map((team,index) => (
                 <div key = {index} className="Team__Section">
-                <Image src={team.featuredImage}/>
+                <Image src={team.featuredImage} width={500} height={500} />
             <p>{team.text}</p>
             <p>{team.textpr}</p>
             </div>
