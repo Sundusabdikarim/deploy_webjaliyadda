@@ -6,8 +6,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "jaliyadda-somalida-istanbul.onrender.com",
-        port: "",
-        pathname: "/uploads/**", // allows all images under /uploads
+        pathname: "/uploads/**", // Strapi local uploads
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/**", // allow all Cloudinary images
       },
     ],
   },

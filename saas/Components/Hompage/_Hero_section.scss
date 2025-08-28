@@ -4,6 +4,7 @@
   min-height: 55vh;
   padding: clamp(8rem, 15vh, 26rem) 4.8rem 0;
   overflow-x: hidden; // Prevent horizontal scroll
+padding-bottom: 5rem;
 
   &__headline {
     margin-top: 3rem;
@@ -82,5 +83,7 @@
 .btn {
   border-radius: 3rem;
   padding: 0.9rem 2rem;
+  margin-left: 3rem;
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  
 }

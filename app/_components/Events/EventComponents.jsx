@@ -1,5 +1,6 @@
 import Images  from "./image"
 
+
 const  EventComponent = ( { component }  ) => {
     console.log(component)
     const componentType = component.__component.split("events-page.")[1];

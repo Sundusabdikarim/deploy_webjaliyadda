@@ -1,7 +1,7 @@
 import { fetchAboutPage } from "@/utilis/starpi.utlis";
-import AboutUs from "../_components/AboutUs/about";
+import AboutUs from "../_components/AboutUs/About";
 import MissionVission from "../_components/AboutUs/MissionVission";
-import Team from "../_components/AboutUs/team";
+import Team from "../_components/AboutUs/Team";
 
 export default async function page() {
   const data  = await fetchAboutPage();
