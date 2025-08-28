@@ -50,8 +50,10 @@ padding-bottom: 5rem;
     }
 
     &__headline {
+      margin-top: auto;
       font-size: clamp(1.2rem, 4vw, 1.8rem); // smaller text
     }
+    
   }
 
   // Mobile (very small phones)
@@ -69,6 +71,8 @@ padding-bottom: 5rem;
     }
 
     &__headline {
+          margin-top: auto;
+
       font-size: clamp(1rem, 5vw, 1.4rem);
     }
    &__headline h5 {
@@ -76,8 +80,13 @@ padding-bottom: 5rem;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   line-height: 1.5;
 }
+ .btn{
+    margin-left: 3rem;
+
+    }
 
   }
+
 }
 
 .btn {
