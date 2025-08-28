@@ -1,14 +1,10 @@
-.Teams { 
-  text-align: center;
-  color: black;
-}
-
 .Team {
   display: flex;
   flex-wrap: wrap; 
   width: 100%;
   background-color: aliceblue;
   margin-bottom: 3rem;
+  gap: 1rem; /* space between items */
 
   &__Section {
     padding-bottom: 2rem;
@@ -32,11 +28,9 @@
     }
   }
 
-  /* Media Queries for responsiveness */
   @media (max-width: 760px) {
     &__Section {
-      flex: 0 0 50%; /* two columns */
-      
+      flex: 0 0 calc(50% - 1rem); /* two columns with gap */
       img {
         width: 12rem;
         height: 12rem;
@@ -46,9 +40,7 @@
 
   @media (max-width: 480px) {
     &__Section {
-      flex: 0 0 50%; /* single column */
-      margin-top: 1rem;
-      
+      flex: 0 0 100%; /* stack vertically */
       img {
         width: 10rem;
         height: 10rem;
