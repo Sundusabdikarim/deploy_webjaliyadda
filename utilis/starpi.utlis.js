@@ -13,14 +13,13 @@ export async function fetchDataFromStarpi(route) {
     throw new Error(`Could not fetch data from ${url}`);
   }
 }
-
-// ✅ Handle image URLs correctly
-export  function getImageUrl(image) {
-  if (!image?.data?.attributes?.url) return null;
-
-  const url = image.data.attributes.url;
+export function getImageUrl(image) {
+  if (!image) return null;
+  const url = image?.data?.attributes?.url || image?.url;
+  if (!url) return null;
   return url.startsWith("http") ? url : `${BASE_URL}${url}`;
 }
+
 
 // ---- Pages ----
 export async function fetchHomepage() {
@@ -53,19 +52,27 @@ export async function fetchBlogArticle() {
     (a, z) => new Date(z.publishedAt) - new Date(a.publishedAt)
   );
 }
-
 export async function fetchEventsPage() {
-  const data = await fetchDataFromStarpi("events-pages?populate=*");
+  const data = await fetchDataFromStarpi(
+    "events-pages?populate=featuredImage,events_content.featuredImage"
+  );
+
   const events = data.map((event) => ({
     ...event.attributes,
     id: event.id,
     featuredImage: getImageUrl(event.attributes.featuredImage),
+    events_content: event.attributes.events_content?.map((component) => ({
+      ...component,
+      featuredImage: getImageUrl(component.featuredImage),
+    })) || [],
   }));
 
   return events.sort(
     (a, z) => new Date(z.publishedAt) - new Date(a.publishedAt)
   );
 }
+
+
 
 // Utility
 export function formatDate(dateString) {

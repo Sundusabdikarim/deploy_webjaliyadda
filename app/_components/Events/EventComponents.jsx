@@ -1,20 +1,18 @@
-import Images  from "./image"
+"use client";
+import Images from "./imagecomponent";
 
+const EventComponent = ({ component }) => {
+  if (!component) return null;
 
-const  EventComponent = ( { component }  ) => {
-    console.log(component)
-    const componentType = component.__component.split("events-page.")[1];
-    switch (componentType){
-        // case "text":
-        //     return <Hightlight headlines={component}/>;
-    
-        case "imagestex":
-        return <div className="imagestext">
-        <Images component = {component} />
-        </div>
-      
-        
-    }
-}
+  const type = component.__component?.split("events-page.")?.[1];
+  if (!type) return null;
 
-export default EventComponent
+  switch (type) {
+    case "imagestex":
+      return <Images component={component} />;
+    default:
+      return null;
+  }
+};
+
+export default EventComponent;
